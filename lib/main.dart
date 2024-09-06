@@ -1,5 +1,4 @@
 import 'package:ai_chatbot/consts.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gemini/flutter_gemini.dart';
 
@@ -8,7 +7,7 @@ import 'home_page.dart';
 void main()
 {
   Gemini.init(apiKey: GEMINI_API_KEY,);
-  runApp(chatbot());
+  runApp(const chatbot());
 }
 
 class chatbot extends StatelessWidget {
@@ -16,7 +15,7 @@ class chatbot extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: HomePage(),
     );
   }
